@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="shortcut icon" href="src/imagens/logo-2.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Página Inicial</title>
+</head>
+
+<body>
+
+  <header>
+    <nav id="nav" class="navbar navbar-expand-sm bg-white navbar-white fixed-top">
+      <a class="navbar-brand pr-5 pl-3" href="index.html">
+        <img src="src/imagens/logo-2.png" alt="logo" style="width:70px;">
+      </a>
+      <ul class="navbar-nav pl-5 ">
+        <li class="nav-item">
+          <a class="nav-link" id="ativo" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carreiras.html">Carreiras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="guia.html">Referências</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre-nos.html">Sobre nós</a>
+        </li>
+      </ul>
+      <span class="icon-menu" onclick="openNav()">&#9776;</span>
+    </nav>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="carreiras.html">Carreira</a>
+        <a href="guia.html">Referências</a>
+        <a href="sobre-nos.html">Sobre nós</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="pre-sobre espaçamento">
+    <div class="container-fluid">
+      <div class="conteudo-pre-sobre text-center">
+        <div class="stitulo">
+          <p>Bem-vindo a Tech Girl</p>
+          <h3>Conheça</h3>
+        </div>
+        <p>
+            Nosso site foi desenvolvido com o objetivo de auxiliar mulheres dentro da área de tecnologia,<br> com um
+            quiz interativo de perguntas profissionais, para conheçer qual carreira na tecnologia da informação
+            identifica mais com seu perfil, <br> acreditamos que com esse teste auxiliaremos milhares de mulheres que ainda tem algum tipo de dúvida em qual área seguir.
+            
+            <br>
+            A tecnologia vem avançando cada dia mais e é evidente a falta de profissionais qualificados para atuar
+            na área, com base em estudos divulgados pela Microsoft foi apontado que apenas....
+          </p>
+        <a href="sobre-nos.html" class="btn-sobre">Continuar...</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pre-quiz">
+    <div class="container-fluid conteudo-pre-quiz text-center">
+      <div class="stitulo">
+        <p>Conheça nosso quiz</p>
+        <h3>Qual carreira combina mais com você?</h3>
+      </div>
+      <p>
+        Fizemos esse quiz, com a finalidade de te ajudar na hora de escolher
+        <br> qual carreira combina mais com você na área da tecnologia.
+        </p>
+      <a href="quiz.html" class="btn-quiz">Ir Agora</a>
+    </div>
+
+  </section>
+
+
+  <section class="espaçamento">
+
+    <div class="ctitulo text-center col-md-12 text-center">
+      <span>Mulheres na TI</span>
+      <h2>Referências de mulheres que <br> conquistaram  seu lugar na TI</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="conteudo-pre-carreira text-center">
+        <a href="guia.html" class="btn-carreira ">Visitar Agora...</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="banner container-fluid clearfix">
+    <div class="text-center">
+      <span>Carreiras na tecnologia da informação</span>
+      <h2> Conheça as <br> principais<br> carreiras <br> na TI </h2>
+      <a href="carreiras.html" class="btn-guia">Carreiras...</a>
+    </div>
+  </section>
+
+  <footer class="bg-black">
+    <div>&copy; Tech Girl 2020</div>
+  </footer>
+  <!-- <div class="pre-guia">
+    <img src="src/imagens/original-ec706e131132c73f1a1a42dec292f1ef.jpg"alt="Notebook" style="width:100%;">
+    <div class="conteudo-pre-guia">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+    </div>
+  </div>
+    -->
+  
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

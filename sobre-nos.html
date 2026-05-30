@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sobre Nós</title>
+</head>
+
+<body>
+  <header>
+    <nav id="nav" class="navbar navbar-expand-sm bg-white navbar-white fixed-top">
+      <a class="navbar-brand pr-5 pl-3" href="index.html">
+        <img src="src/imagens/logo-2.png" alt="logo" style="width:70px;">
+      </a>
+      <ul class="navbar-nav pl-5 ">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carreiras.html">Carreiras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="guia.html">Referências</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="ativo" href="sobre-nos.html">Sobre nós</a>
+        </li>
+      </ul>
+      <span class="icon-menu" onclick="openNav()">&#9776;</span>
+    </nav>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="carreiras.html">Carreira</a>
+        <a href="guia.html">Referências</a>
+        <a href="sobre-nos.html">Sobre nós</a>
+      </div>
+    </div>
+  </header>
+  <section class="sobre espaçamento-nav">
+    <div class="container-fluid">
+
+      <div class="conteudo-sobre text-center ">
+        <div class="stitulo">
+          <p>Conheça o time da Tech Girl</p>
+
+        </div>
+        <div class="container-paragrafo">
+          <h3>Sobre Nós</h3>
+          <p>
+            Nosso site foi desenvolvido com o objetivo de auxiliar mulheres dentro da área de tecnologia,<br> com um
+            quiz interativo de perguntas profissionais, para conhecer qual carreira na tecnologia da informação
+            identifica mais com seu perfil, <br> acreditamos que com esse teste auxiliaremos milhares de mulheres que ainda tem algum tipo de dúvida em qual área seguir.
+            
+            <br>
+            A tecnologia vem avançando cada dia mais e é evidente a falta de profissionais qualificados para atuar
+            na área, com base em estudos divulgados pela Microsoft foi apontado que apenas 25% dos empregados do
+            país na área de (TI) são do sexo feminino.
+            <br>
+            Por esse motivo nosso objetivo é direcionado as mulheres empoderadas e engajadas do nosso país.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- <div class="todas-bios container-fluid">
+    <div class="title">
+      <h3>Quem Somos</h3>
+    </div>
+    <div class="bio-left">
+      <img src="src/fotos/Kauan.jpeg" alt="">
+      <p>
+        <strong>Kauan R Nascimento, 17 anos </strong>
+        <br>Estudante de análise e desenvolvimento de sistemas
+      </p>
+    </div>
+    <div class="bio-right">
+      <img src="src/fotos/moama.jpg" alt="">
+      <p>
+        <strong>Moana M Dias Santos, 24 anos</strong>
+        <br>Estudante de análise e desenvolvimento de sistemas
+      </p>
+    </div>
+    <div class="bio-left">
+      <img src="src/fotos/uriel.jpg" alt="">
+      <p>
+        <strong>Uriel Gava, 22 anos</strong>
+        <br>Estudante de Game Design
+      </p>
+    </div>
+    <div class="bio-right">
+      <img src="src/fotos/valdemar.jpg" alt="">
+      <p>
+        <strong>Valdemar Luiz da Silva Junior, 22 Anos</strong>
+        <br>Estudante de Gestão de Tecnologia da Informação
+      </p>
+    </div>
+    <div class="bio-left">
+      <img src="src/fotos/Veronica.jpeg" alt="">
+      <p>
+        <strong>Verônica Sampel, 22 Anos</strong>
+        <br>Estudante de análise e desenvolvimento de sistemas
+      </p>
+    </div>
+  </div> -->
+
+  <section class="bio">
+    <div class="bio container-fluid text-center">    
+      <div class="title2">
+          <h3>Quem Somos</h3>
+      </div>
+      <div class="row justify-content-center">
+        <div class="container-bio espaco2">
+            <img src="src/fotos/Kauan.jpeg" alt="" class="image">
+            <div type="button" class="overlay2" data-toggle="modal" data-target="#myModal1">
+                <div class="text">
+                    Kauan Nascimento
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-bio espaco2">
+            <img src="src/fotos/moama.jpg" alt="" class="image">
+            <div type="button" class="overlay2" data-toggle="modal" data-target="#myModal2">
+                <div class="text">
+                    Moana Santos
+                </div>
+            </div>
+        </div>
+  
+        <div class="container-bio espaco2">
+            <img src="src/fotos/uriel.jpg" alt="" class="image">
+            <div type="button" class="overlay2" data-toggle="modal" data-target="#myModal3">
+                <div class="text">
+                    Uriel Gava
+                </div>
+            </div>
+        </div>
+  
+        <div class="container-bio espaco2">
+            <img src="src/fotos/valdemar.jpg" alt="" class="image">
+            <div type="button" class="overlay2" data-toggle="modal" data-target="#myModal5">
+                <div class="text">
+                    Valdemar Luiz
+                </div>
+            </div>
+        </div>
+  
+        <div class="container-bio espaco2">
+            <img src="src/fotos/Veronica.jpeg" alt="" class="image">
+            <div type="button" class="overlay2" data-toggle="modal" data-target="#myModal4">
+                <div class="text">
+                    Verônica Sampel
+                </div>
+            </div>
+        </div>
+      </div>
+  
+          <!-- Modal -->
+          
+      <div class="modal justify-a" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">        
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Kauan R. Nascimento</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              17 anos, Estudante de Análise e Desenvolvimento de Sistemas.
+            </div>        
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>        
+          </div>
+        </div>
+      </div>  
+  
+      <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">        
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Moana M Dias Santos</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              24 anos, Estudante de Análise e Desenvolvimento de Sistemas.
+            </div>        
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>        
+          </div>
+        </div>
+      </div>  
+  
+      <div class="modal" id="myModal3">
+        <div class="modal-dialog">
+          <div class="modal-content">        
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Uriel Gava</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              22 anos, Estudante de Game Design.
+            </div>        
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>        
+          </div>
+        </div>
+      </div>  
+  
+      <div class="modal" id="myModal4">
+        <div class="modal-dialog">
+          <div class="modal-content">        
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Verônica Sampel</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              22 Anos, Estudante de Análise e Desenvolvimento de Sistemas.
+            </div>        
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>        
+          </div>
+        </div>
+      </div>  
+  
+      <div class="modal" id="myModal5">
+        <div class="modal-dialog">
+          <div class="modal-content">        
+            <div class="modal-header">
+              <h4 class="modal-title text-center">Valdemar Luiz da Silva Junior</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              22 anos, Estudante de Tecnologia da Gestão da Tecnologia da Informação.
+            </div>        
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>        
+          </div>
+        </div>
+      </div>  
+  
+    </div>
+  </section>
+  
+
+  <footer class="bg-white pt-5">
+    <div>&copy; Tech Girl 2020</div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

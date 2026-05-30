@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="shortcut icon" href="src/imagens/logo-2.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Quiz</title>
+</head>
+
+<body>
+
+  <header>
+    <nav id="nav" class="navbar navbar-expand-sm bg-white navbar-white fixed-top">
+      <a class="navbar-brand pr-5 pl-3" href="index.html">
+        <img src="src/imagens/logo-2.png" alt="logo" style="width:70px;">
+      </a>
+      <ul class="navbar-nav pl-5 ">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="ativo" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carreiras.html">Carreiras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="guia.html">Referências</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre-nos.html">Sobre nós</a>
+        </li>
+      </ul>
+      <span class="icon-menu" onclick="openNav()">&#9776;</span>
+    </nav>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="carreiras.html">Carreira</a>
+        <a href="guia.html">Referências</a>
+        <a href="sobre-nos.html">Sobre nós</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="espaçamento-nav text-center ">
+    <div class="quiz">
+      <div class="stitulo">
+        <p>Conheça nosso Quiz</p>
+        <h3>Qual carreira combina mais com você?</h3>
+      </div>
+  </section>
+  <section>
+    <form NAME="QCM" id="quiz-carreira">
+      <div class="quiz-question">
+        <h4>Qual item abaixo você conhece ou ouviu falar?</h4>
+        <div class="quiz-questiom-resp">
+          <input TYPE="RADIO" NAME="question1" VALUE="A">C/C++<br>
+          <input TYPE="RADIO" NAME="question1" VALUE="B">JavaScript<br>
+          <input TYPE="RADIO" NAME="question1" VALUE="C">Phyton<br>
+          <input TYPE="RADIO" NAME="question1" VALUE="D">Java<br>
+          <input TYPE="RADIO" NAME="question1" VALUE="E">Terminal\console<br>
+        </div>
+      </div>
+
+      <div class="quiz-question">
+        <h4>Você se considera uma pessoa muito criativa</h4>
+        <div class="quiz-questiom-resp">
+          <input TYPE="RADIO" NAME="question2" VALUE="A">Sim<br>
+          <input TYPE="RADIO" NAME="question2" VALUE="B">Não<br>
+        </div>
+      </div>
+      <div class="quiz-question">
+        <h4>Qual plataforma você mais se identifica?</h4>
+        <div class="quiz-questiom-resp">
+          <input TYPE="RADIO" NAME="question3" VALUE="A">Mobile <br>
+          <input TYPE="RADIO" NAME="question3" VALUE="B">Mac<br>
+          <input TYPE="RADIO" NAME="question3" VALUE="C">Linux<br>
+          <input TYPE="RADIO" NAME="question3" VALUE="D">Windows<br>
+        </div>
+      </div>
+      <div class="quiz-question">
+        <h4>Agora você é uma desenvolvedora de software! O que você gostaria de desenvolver?</h4>
+        <div class="quiz-questiom-resp">
+          <input TYPE="RADIO" NAME="question4" VALUE="A">Uma Loja Online<br>
+          <input TYPE="RADIO" NAME="question4" VALUE="B">Uma Ferramenta online para ajudar as pessoas<br>
+          <input TYPE="RADIO" NAME="question4" VALUE="C">Um Software que analisa dados para ajudar empresas a faturar
+          mais<br>
+          <input TYPE="RADIO" NAME="question4" VALUE="D">Um conteúdo interativo e divertido para passar o tempo.<br>
+        </div>
+      </div>
+      <div class="quiz-question">
+        <h4>Você se considera melhor em:</h4>
+        <div class="quiz-questiom-resp">
+          <input TYPE="RADIO" NAME="question5" VALUE="A">Resolver cálculos<br>
+          <input TYPE="RADIO" NAME="question5" VALUE="B">Solucionar problemas de segurança<br>
+          <input TYPE="RADIO" NAME="question5" VALUE="C">Desenvolver soluções criativas<br>
+          <input TYPE="RADIO" NAME="question5" VALUE="D">Pensar na lógica das coisas<br>
+        </div>
+      </div>
+      <div class="quiz-question">
+        <h4>Futuramente você se imagina:</h4>
+        <div class="quiz-questiom-resp">
+          <input TYPE="RADIO" NAME="question6" VALUE="A">Liderando uma equipe que tem como objetivo assegurar a
+          integridade de informações de grandes organizações.<br>
+          <input TYPE="RADIO" NAME="question6" VALUE="B">Fazendo parte de uma equipe focada em promover novidades no
+          mundo
+          dos games.<br>
+          <input TYPE="RADIO" NAME="question6" VALUE="C">Criando aplicativos diversos para aparelhos móveis.<br>
+          <input TYPE="RADIO" NAME="question6" VALUE="D">Entendendo todos os detalhes sobre estrutura de
+          computadores.<br>
+        </div>
+      </div>
+      <div class="text-center p-5">
+        <input class="btn-quiz" TYPE="BUTTON" id="valide" NAME="valide" VALUE="RESULTADO" onclick="javascript:solution(this.form);"><br>
+      </div>
+    </form>
+  </section>
+
+
+
+
+  <footer class="bg-white">
+    <div>&copy; Tech Girl 2020</div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
